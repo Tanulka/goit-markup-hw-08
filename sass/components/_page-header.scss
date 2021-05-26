@@ -1,0 +1,18 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.page-header__logo {
+  margin-right: 93px;
+}
+.page-header .link {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}

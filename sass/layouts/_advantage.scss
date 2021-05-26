@@ -1,0 +1,37 @@
+.section--without-indent {
+  padding-bottom: 0;
+}
+.advantage__item {
+  flex-basis: 100%;
+
+  @media screen and (min-width: 768px) {
+    @include calcFor(2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include calcFor(4);
+  }
+}
+.advantage__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  font-family: var(--main-font-family);
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+.advantage__box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--grey-bg-color);
+  margin-bottom: 30px;
+}
+.advantage__icon {
+  width: 70px;
+  height: 70px;
+  fill: var(--title-text-color);
+}

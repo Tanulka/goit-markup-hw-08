@@ -1,0 +1,25 @@
+.contact {
+  display: flex;
+}
+.contact__item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact__link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  @include cubic(color);
+}
+.contact__link:hover,
+.contact__link:focus {
+  color: var(--accent-color);
+}
+
+.contact__icon {
+  display: inline-flex;
+  margin-right: 10px;
+  fill: currentColor;
+}
