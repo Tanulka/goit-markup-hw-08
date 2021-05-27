@@ -1,10 +1,21 @@
 .filter {
   display: flex;
-  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .filter--margin {
   margin-bottom: 50px;
+}
+.filter__item {
+  margin-top: 15px;
 }
 .filter__item:not(:last-child) {
   margin-right: 8px;
@@ -33,7 +44,15 @@
 
 .portfolio__item {
   background: var(--primary-white-color);
-  @extend %calc-for-3;
+  flex-basis: 100%;
+
+  @media screen and (min-width: 768px) {
+    @include calcFor(2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include calcFor(3);
+  }
 }
 .portfolio__link {
   display: block;
