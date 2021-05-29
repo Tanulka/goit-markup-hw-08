@@ -1,13 +1,17 @@
 .hero__title {
   font-family: var(--main-font-family);
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }
 
 .section__title {
