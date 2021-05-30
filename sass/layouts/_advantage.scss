@@ -1,5 +1,7 @@
 .section--without-indent {
-  padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 .advantage__item {
   flex-basis: 100%;
@@ -12,6 +14,12 @@
     @include calcFor(4);
   }
 }
+
+.advantage__item:not(:last-child) {
+  @media screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
+}
 .advantage__title {
   font-size: 14px;
   line-height: 1.14;
@@ -21,6 +29,10 @@
   font-weight: 700;
 
   margin-bottom: 10px;
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
 }
 .advantage__box-icon {
   display: flex;
