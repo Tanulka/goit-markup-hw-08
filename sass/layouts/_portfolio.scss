@@ -46,6 +46,10 @@
   background: var(--primary-white-color);
   flex-basis: 100%;
 
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
+
   @media screen and (min-width: 768px) {
     @include calcFor(2);
   }
@@ -53,9 +57,6 @@
   @media screen and (min-width: 1200px) {
     @include calcFor(3);
   }
-}
-.portfolio__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .portfolio__link {
